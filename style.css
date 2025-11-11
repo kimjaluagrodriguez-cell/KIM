@@ -1,4 +1,3 @@
-/* Base styles */
 * {
     margin: 0px;
     padding: 0px;
@@ -15,7 +14,7 @@ body {
     gap: 10px;
 }
 
-/* Navbar styles */
+
 .navbar {
     padding: 30px;
     grid-column: 1/11;
@@ -51,7 +50,7 @@ body {
     }
 }
 
-/* Image section styles */
+
 .img-section {
     grid-column: 1/4;
     padding: 60px 0px 45px 120px;
@@ -70,7 +69,7 @@ body {
     }
 }
 
-/* Text section styles */
+
 .text-section {
     grid-column: 4/11;
     padding: 150px 0px 45px 260px;
@@ -86,15 +85,15 @@ body {
         padding: 80px 0px 0px 0px;
     }
 
-    /* Moved from about.html */
+    
     p {
         font-size: 30px;
         text-align: left;
         line-height: 1.5;
-        font-family: 'Vina Sans', sans-serif; /* Changed to match Contact content */
+        font-family: 'Vina Sans', sans-serif;
     }
 
-    /* Added for contact links */
+   
     a {
         color: white;
         text-decoration: none;
@@ -102,14 +101,14 @@ body {
     }
 }
 
-/* Contact content styles (moved from contact.html) */
+
 .contact-content {
     text-align: left;
     margin: 0 auto;
     max-width: 100%;
 
     .intro {
-        font-family: 'Aboreto', sans-serif; /* Changed to match logo font */
+        font-family: 'Aboreto', sans-serif;
     }
 
     ul li:nth-child(3) {
@@ -117,7 +116,7 @@ body {
     }
 }
 
-/* Footer styles */
+
 .footer {
     grid-column: 1/11;
     background-color: #0F2573;
@@ -132,7 +131,7 @@ body {
     width: 100%;
 }
 
-/* Media queries */
+
 @media screen and (max-width: 1200px) {
     .navbar {
         ul {
@@ -289,13 +288,13 @@ body {
             font-size: 28px;
         }
 
-        /* Moved from about.html */
+       
         p {
             font-size: 20px;
         }
     }
 
-    /* Moved from contact.html */
+    
     .contact-content {
         text-align: center;
     }
@@ -377,7 +376,10 @@ body {
 
     .navbar {
         ul {
-            cursor: grab;
+            display: none;
+        }
+
+        #menu {
             display: block;
             color: white;
             float: right;
@@ -477,9 +479,9 @@ body {
     }
 }
 
-/* Responsive About text font size (adjusted for fit) */
+
 .text-section p {
-    font-size: 25px; /* Smaller starting size for big screens to prevent scrolling */
+    font-size: 25px; 
 }
 
 @media screen and (max-width: 1200px) {
@@ -520,6 +522,6 @@ body {
 
 @media screen and (max-width: 380px) {
     .text-section p {
-        font-size: 10px; /* Smallest size for very small screens */
+        font-size: 10px;
     }
 }
